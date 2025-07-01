@@ -14,6 +14,6 @@ project "VulkanMemoryAllocator"
     includedirs { "%{prj.location}/include", vulkan_sdk .. "/include" }
 
     files {
-        "%{prj.location}/include/vk_mem_alloc.h",
+        "%{prj.location}/include/**.h",
         "%{prj.location}/src/vma_lib.cpp"
     }
